@@ -46,7 +46,6 @@ function Book(title, author, pages, read){
   function removeBook(index){
     myLibrary.splice(index, 1);
     render();
-
   }
 
   function addBookToLibrary(){
@@ -67,7 +66,7 @@ newBookbtn.addEventListener("click", function(){
 })
   
 document.querySelector("#new-book-form").addEventListener("submit", function(){
-  event.preventDefault();
+  e.preventDefault();
   addBookToLibrary();
-})
+});
 
