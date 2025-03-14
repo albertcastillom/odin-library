@@ -41,6 +41,14 @@ select:focus{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+input[type="text"]:user-invalid,
+input[type="number"]:user-invalid,
+select:user-invalid{
+    border-color: red;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
 label{
     font-size: 18px;
     margin-bottom: 10px;
@@ -122,5 +130,5 @@ button:hover{
 }
 
 .read-status{
-    background-color: green;
+    background-color: rgba(42, 108, 47, 0.905);
 }
